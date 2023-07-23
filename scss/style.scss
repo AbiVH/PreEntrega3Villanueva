@@ -16,14 +16,14 @@ body {
 .barra-navegacion {
   background-color: $color-primario;
   padding: 10px;
-  height: 15vh; // Altura del header del 15% del viewport height
+  height: 15vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .logo {
     img {
-      width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+      width: 100px;
       height: auto;
     }
   }
@@ -48,6 +48,30 @@ body {
             background-color: #fff;
           }
         }
+
+        &.colorNav {
+          color: #fff;
+          background-color: $color-primario;
+          padding: 10px;
+          border-radius: 8px;
+
+          &:hover {
+            color: $color-primario;
+            background-color: #fff;
+          }
+        }
+      }
+
+      .buscar {
+        color: #fff;
+        background-color: $color-primario;
+        padding: 10px;
+        border-radius: 8px;
+
+        &:hover {
+          color: $color-primario;
+          background-color: #fff;
+        }
       }
     }
   }
@@ -58,8 +82,8 @@ body {
   max-width: 960px;
   margin: 20px auto;
   padding: 20px;
-  display: flex; // Mostrar contenido principal y aside en una fila
-  height: 75vh; // Altura del main del 75% del viewport height
+  display: flex;
+  height: 75vh;
 
   h1 {
     margin-bottom: 20px;
@@ -75,11 +99,11 @@ body {
   width: 20%;
   background-color: #f1f1f1;
   padding: 10px;
-  text-align: justify; // Alineación justificada para todos los textos dentro del aside
+  text-align: justify;
 
   h2 {
     margin-bottom: 10px;
-    text-align: center; // Centrar el título del aside
+    text-align: center;
   }
 
   img {
@@ -89,6 +113,7 @@ body {
     margin-bottom: 10px;
   }
 }
+
 // Estilos para el carrete de imágenes
 .main-content {
   flex: 1;
@@ -106,6 +131,15 @@ body {
       img {
         width: 100%;
         display: block;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin-bottom: 15px;
       }
     }
   }
@@ -117,5 +151,5 @@ body {
   color: #fff;
   padding: 10px;
   text-align: center;
-  height: 10vh; // Altura del footer del 10% del viewport height
+  height: 10vh;
 }
