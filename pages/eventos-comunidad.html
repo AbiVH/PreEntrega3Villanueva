@@ -1,22 +1,99 @@
-// Declaración de variables $color-primario: #FF5733; $color-fondo: #f7f7f7;
-$color-texto: #333; // Estilos generales para el cuerpo de la página body {
-font-family: Arial, sans-serif; margin: 0; padding: 0; background-color:
-$color-fondo; color: $color-texto; } // Estilos para el header (barra de
-navegación) .barra-navegacion { background-color: $color-primario; padding:
-10px; height: 15vh; display: flex; justify-content: space-between; align-items:
-center; .logo { img { width: 100px; height: auto; } } nav { ul { list-style:
-none; margin: 0; padding: 0; li { display: inline-block; a { color: #fff;
-text-decoration: none; padding: 10px; border-radius: 8px; &:hover { color:
-$color-primario; background-color: #fff; } } } } } } // Estilos para el
-contenido principal (main) .contenido-principal { max-width: 960px; margin: 20px
-auto; padding: 20px; display: flex; height: 75vh; h1 { margin-bottom: 20px; } p
-{ margin-bottom: 40px; } } // Estilos para el aside (sidebar) .sidebar { width:
-20%; background-color: #f1f1f1; padding: 10px; text-align: justify; h2 {
-margin-bottom: 10px; text-align: center; } img { max-width: 100%; height: auto;
-display: block; margin-bottom: 10px; } } // Estilos para el carrete de imágenes
-.main-content { flex: 1; text-align: center; margin-left: 30px;
-.carrete-imagenes { display: flex; justify-content: space-between; .imagen {
-width: 30%; margin: 0; img { width: 100%; display: block; margin-bottom: 10px; }
-h3 { margin-bottom: 5px; } p { margin-bottom: 15px; } } } } // Estilos para el
-pie de página (footer) .pie-de-pagina { background-color: $color-primario;
-color: #fff; padding: 10px; text-align: center; height: 10vh; }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Técnicas y Formas de Kung Fu</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="barra-navegacion">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../assets/espadas.webp" alt="Logo Kung Fu" />
+      </div>
+
+      <!-- Contenido de la barra de navegación -->
+      <nav>
+        <ul>
+          <li class="colorNav"><a href="../index.html">Inicio</a></li>
+          <li class="colorNav">
+            <a href="./estilos-del-kung-fu.html">Estilos de Kung Fu</a>
+          </li>
+          <li class="colorNav">
+            <a href="#">Técnicas y Formas</a>
+          </li>
+          <li class="colorNav">
+            <a href="./filosofia-valores.html">Filosofía y Valores</a>
+          </li>
+          <li class="colorNav">
+            <a href="./eventos-comunidad.html">Eventos y Comunidad</a>
+          </li>
+          <li class="buscar colorNav">Buscar</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contenido-principal">
+      <!-- Aside en la parte izquierda -->
+      <aside class="sidebar">
+        <h2>Técnicas y Formas de Kung Fu</h2>
+        <!-- Agregar la imagen aquí -->
+        <img src="../assets/pagina2-4.jpg" alt="Técnicas y Formas de Kung Fu" />
+        <p>
+          Las técnicas y formas de Kung Fu son los movimientos y secuencias
+          específicas utilizadas en el entrenamiento y combate. Cada estilo de
+          Kung Fu tiene sus propias técnicas distintivas y formas, que pueden
+          variar en velocidad, fuerza y complejidad.
+        </p>
+      </aside>
+
+      <!-- Contenido principal de la página -->
+      <div class="main-content">
+        <h1>Técnicas y Formas del Kung Fu</h1>
+        <p>
+          El Kung Fu es conocido por su amplia variedad de técnicas y formas,
+          que han sido desarrolladas y perfeccionadas a lo largo de siglos de
+          práctica. Cada estilo de Kung Fu tiene su enfoque y filosofía única,
+          pero comparten el objetivo común de mejorar la capacidad física y
+          mental de los practicantes.
+        </p>
+
+        <!-- Carrete de imágenes -->
+        <div class="carrete-imagenes">
+          <div class="imagen">
+            <img src="../assets/pagina2-1.jpg" alt="Golpe de Puño" />
+            <h3>Golpe de Puño</h3>
+            <p>
+              El golpe de puño es una técnica básica en el Kung Fu, que se
+              realiza con el puño cerrado y se dirige hacia el oponente para
+              golpearlo.
+            </p>
+          </div>
+          <div class="imagen">
+            <img src="../assets/pagina2-2.jpg" alt="Patada Alta" />
+            <h3>Patada Alta</h3>
+            <p>
+              La patada alta es una técnica de pierna que se ejecuta hacia la
+              cabeza o el torso del oponente. Requiere flexibilidad y fuerza en
+              la pierna.
+            </p>
+          </div>
+          <div class="imagen">
+            <img src="../assets/pagina2-3.png" alt="Bloqueo de Patada" />
+            <h3>Bloqueo de Patada</h3>
+            <p>
+              El bloqueo de patada es una técnica defensiva que se utiliza para
+              detener y desviar los ataques de patada del oponente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pie-de-pagina">
+      <!-- Pie de página -->
+      <p>Derechos de autor &copy; 2023 - Mi Página Web de Kung Fu</p>
+    </footer>
+  </body>
+</html>
