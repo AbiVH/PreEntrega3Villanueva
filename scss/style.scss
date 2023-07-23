@@ -1,3 +1,94 @@
-@import url(../scss/_haeder.scss);
-@import url(../scss/_main.scss);
-@import url(../scss/_footer.scss);
+// Declaración de variables
+$color-primario: #ff5733;
+$color-fondo: #f7f7f7;
+$color-texto: #333;
+
+// Estilos generales para el cuerpo de la página
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $color-fondo;
+  color: $color-texto;
+}
+
+// Estilos para el header (barra de navegación)
+.barra-navegacion {
+  background-color: $color-primario;
+  padding: 10px;
+  height: 15vh; // Altura del header del 15% del viewport height
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    img {
+      width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+      height: auto;
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Estilos para el contenido principal (main)
+.contenido-principal {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  height: 75vh; // Altura del main del 75% del viewport height
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  // Estilos para el carrete de imágenes
+  .carrete-imagenes {
+    display: flex;
+    justify-content: space-between;
+
+    .imagen {
+      width: 30%;
+      margin: 0;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+// Estilos para el pie de página (footer)
+.pie-de-pagina {
+  background-color: $color-primario;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  height: 10vh; // Altura del footer del 10% del viewport height
+}
