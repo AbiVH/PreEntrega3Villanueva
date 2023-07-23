@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
     <title>Mi Página Web Simple</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="barra-navegacion">
@@ -19,31 +19,43 @@
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Acerca de</a></li>
           <li><a href="#">Contacto</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Productos</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="contenido-principal">
-      <!-- Contenido principal de la página -->
-      <h1>Bienvenido a Mi Página Web</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod,
-        quam eu accumsan tincidunt, arcu quam bibendum elit, at vestibulum purus
-        nisi nec risus.
-      </p>
+      <!-- Aside en la parte izquierda -->
+      <aside class="sidebar">
+        <h2>Contenido del Aside</h2>
+        <!-- Agregar la imagen aquí -->
+        <img
+          src="../assets/nombre-de-la-imagen.jpg"
+          alt="Descripción de la imagen"
+        />
+        <p>
+          Este es el contenido del aside. Puedes agregar cualquier contenido
+          adicional aquí.
+        </p>
+      </aside>
 
-      <!-- Carrete de imágenes -->
-      <div class="carrete-imagenes">
-        <div class="imagen">
-          <img src="imagen1.jpg" alt="Imagen 1" />
-        </div>
-        <div class="imagen">
-          <img src="imagen2.jpg" alt="Imagen 2" />
-        </div>
-        <div class="imagen">
-          <img src="imagen3.jpg" alt="Imagen 3" />
+      <!-- Contenido principal de la página -->
+      <div class="main-content">
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>aqui va el texto</p>
+
+        <!-- Carrete de imágenes -->
+        <div class="carrete-imagenes">
+          <div class="imagen">
+            <img src="../assets/imagen1.jpg" alt="Imagen 1" />
+          </div>
+          <div class="imagen">
+            <img src="../assets/imagen2.jpg" alt="Imagen 2" />
+          </div>
+          <div class="imagen">
+            <img src="../assets/imagen3.jpg" alt="Imagen 3" />
+          </div>
         </div>
       </div>
     </main>

@@ -36,14 +36,16 @@ body {
 
       li {
         display: inline-block;
-        margin-right: 20px;
 
         a {
           color: #fff;
           text-decoration: none;
+          padding: 10px;
+          border-radius: 8px;
 
           &:hover {
-            text-decoration: underline;
+            color: $color-primario;
+            background-color: #fff;
           }
         }
       }
@@ -56,7 +58,7 @@ body {
   max-width: 960px;
   margin: 20px auto;
   padding: 20px;
-  text-align: center;
+  display: flex; // Mostrar contenido principal y aside en una fila
   height: 75vh; // Altura del main del 75% del viewport height
 
   h1 {
@@ -66,8 +68,33 @@ body {
   p {
     margin-bottom: 40px;
   }
+}
 
-  // Estilos para el carrete de imágenes
+// Estilos para el aside (sidebar)
+.sidebar {
+  width: 20%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: justify; // Alineación justificada para todos los textos dentro del aside
+
+  h2 {
+    margin-bottom: 10px;
+    text-align: center; // Centrar el título del aside
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+// Estilos para el carrete de imágenes
+.main-content {
+  flex: 1;
+  text-align: center;
+  margin-left: 30px;
+
   .carrete-imagenes {
     display: flex;
     justify-content: space-between;
